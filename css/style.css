@@ -20,11 +20,13 @@ nav a{
 #home{
 	margin-top: 4.1%;
 }
-#imagem-principal{
+/*#imagem-principal{
 	width: 100%;
 	height: 600px;
-}
+}*/
 #sobre{
 	background-color: #dfd;
+}
+.espacamento{
 	padding: 3% 0;
 }
