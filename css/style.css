@@ -11,8 +11,9 @@ a{
 	color: inherit;
 }
 nav{
-	background-color: gray;
+	position: fixed;
 }
+
 nav a{
 	color: white;
 }
