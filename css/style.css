@@ -20,6 +20,10 @@ nav{
 nav a{
 	color: white;
 }
+.icones-habilidades{
+	margin: 2% 0;
+	font-size: 7em;
+}
 #imagem-principal{
 	width: 100%;
 }
