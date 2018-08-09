@@ -36,3 +36,9 @@ npm i gulp-htmlmin --save-dev
 ```
 npm i gulp-notify --save-dev
 ```
+
+> BROWSER SYNC
+
+```
+npm i browser-sync gulp --save-dev
+```
