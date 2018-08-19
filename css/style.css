@@ -39,5 +39,6 @@ nav a{
 	height: 40px;
 }
 footer{
-	margin-bottom: 0;
+	overflow: hidden;
+	background-color: black;
 }
