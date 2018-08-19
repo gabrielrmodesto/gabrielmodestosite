@@ -3,14 +3,20 @@ const menuItens = document.querySelectorAll('.menu a');
 menuItens.forEach(item => {
 	item.addEventListener('click', scrollToId);
 });
-
+function getScrollToHref(element) {
+	const id = element.getAttribute('href');
+	return document.querySelector(id).offsetTop;
+}
 function scrollToId(event) {
 	event.preventDefault();
-	const element = event.target;
-	const id = element.getAttribute('href');
-	const section = document.querySelector(id).offsetTop;
+	const section = getScrollToHref(event.target) - 50;
+	scrollToPosition(section);
+}
+
+
+function scrollToPosition(section){
 	window.scroll({
-		top: section - 50,
+		top: section,
 		behavior: "smooth"
 	});
 }
