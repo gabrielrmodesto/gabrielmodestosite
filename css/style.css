@@ -56,6 +56,12 @@ footer{
 	margin-top: 5%;
 	text-align: center;
 }
+.container-fluid img{
+	height: 18rem !important;
+}
+.container-fluid .card{
+	height: 30rem !important;
+}
 .medias-contact{
 	margin: 5% 0;
 }
