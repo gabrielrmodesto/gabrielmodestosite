@@ -71,4 +71,7 @@ footer{
 	#home{
 		margin-top: 11%;
 	}
+	#projects-section{
+		margin: auto !important;
+	}
 }
