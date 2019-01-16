@@ -57,14 +57,33 @@ footer{
 	margin-top: 6%;
 	text-align: center;
 }
-h5{
+h3, h5{
 	font-weight: bold;
 }
 .medias-contact{
 	margin: 5% 0;
 }
-.projetosmain{
-	margin-top: 5%;
+.projetosmain h3{
+	margin: 5% 0;
+}
+.projetosmain li{
+	display: block;
+}
+.icon-margin{
+	margin-left: 25%;
+}
+.icon-margin-email{
+	margin-left: 30%;
+}
+.icon-margin-linkedin{
+	margin-left: 10%;
+}
+.integranteNome{
+	font-size: 1.5em;
+	text-align: center;
+}
+.integranteNome + p{
+	text-align: center;
 }
 @media only screen and (min-width: 1000px){
 	.container-fluid img{
@@ -76,9 +95,18 @@ h5{
 }
 @media only screen and (max-width: 600px) {
 	#home{
-		margin-top: 11%;
+		margin-top: 39.95px;
 	}
 	#projects-section{
 		margin: auto !important;
+	}
+	.projetosmain{
+		margin-top: 15%;
+	}
+	.icon-margin{
+		margin-left: 30%;
+	}
+	.icon-margin-email{
+		margin-left: 35%;
 	}
 }
