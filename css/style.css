@@ -85,6 +85,12 @@ h3, h5{
 .integranteNome + p{
 	text-align: center;
 }
+.img-projeto img{
+	margin: 3% 0;
+}
+.last-img{
+	padding-bottom: 15%;
+}
 @media only screen and (min-width: 1000px){
 	.container-fluid img{
 		height: 18rem !important;
@@ -108,5 +114,8 @@ h3, h5{
 	}
 	.icon-margin-email{
 		margin-left: 35%;
+	}
+	.img-projeto img{
+		margin: 5% 0;
 	}
 }
