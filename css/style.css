@@ -9,7 +9,7 @@ ul,ol,li{
 	text-decoration: none;
 	display: inline-block;
 }
-a{
+a, a:hover{
 	text-decoration: none;
 	color: inherit;
 }
