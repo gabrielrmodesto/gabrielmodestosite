@@ -4,6 +4,12 @@
 }
 body{
 	padding-top: 4%;
+	display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main{
+    flex: 1 0 auto;
 }
 ul,ol,li{
 	text-decoration: none;
@@ -20,6 +26,9 @@ nav{
 nav a{
 	color: white;
 }
+h2,h3,h4{
+	text-align: center;
+}
 .icones-habilidades{
 	margin: 2% 0;
 	font-size: 7em;
@@ -33,11 +42,6 @@ nav a{
 .espacamento{
 	padding: 3% 0;
 }
-.desenho{
-	border-radius: 50%;
-	width: 40px;
-	height: 40px;
-}
 #sobre-paragrafo{
 	text-indent: 3%;
 	text-align: justify;
@@ -49,19 +53,69 @@ footer{
 .skills{
 	margin-top: 5%;
 }
-.swal-button {
-  padding: 7px 19px;
-  border-radius: 2px;
-  background-color: #4962B3;
-  font-size: 12px;
-  border: 1px solid #3e549a;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+.projects{
+	margin-top: 6%;
+	text-align: center;
+}
+h3, h5{
+	font-weight: bold;
 }
 .medias-contact{
 	margin: 5% 0;
 }
+.projetosmain h3{
+	margin: 5% 0;
+}
+.projetosmain li{
+	display: block;
+}
+.icon-margin{
+	margin-left: 25%;
+}
+.icon-margin-email{
+	margin-left: 30%;
+}
+.icon-margin-linkedin{
+	margin-left: 10%;
+}
+.integranteNome{
+	font-size: 1.5em;
+	text-align: center;
+}
+.integranteNome + p{
+	text-align: center;
+}
+.img-projeto img{
+	margin: 3% 0;
+}
+.last-img{
+	padding-bottom: 15%;
+}
+@media only screen and (min-width: 1000px){
+	.container-fluid img{
+		height: 18rem !important;
+	}
+	.container-fluid .card{
+		height: 30rem !important;
+	}
+}
 @media only screen and (max-width: 600px) {
 	#home{
-		margin-top: 11%;
+		margin-top: 39.95px;
+	}
+	#projects-section{
+		margin: auto !important;
+	}
+	.projetosmain{
+		margin-top: 15%;
+	}
+	.icon-margin{
+		margin-left: 30%;
+	}
+	.icon-margin-email{
+		margin-left: 35%;
+	}
+	.img-projeto img{
+		margin: 5% 0;
 	}
 }
