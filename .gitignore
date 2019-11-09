@@ -4,4 +4,4 @@ vendor
 composer.lock
 .env
 .vscode
-.ideia
+.idea

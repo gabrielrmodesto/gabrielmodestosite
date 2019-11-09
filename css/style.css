@@ -91,6 +91,11 @@ h3, h5{
 .last-img{
 	padding-bottom: 15%;
 }
+.project-name{
+	margin-top: 2%;
+	font-size: 1.5em;
+	font-weight: bold;
+}
 @media only screen and (min-width: 1000px){
 	.container-fluid img{
 		height: 18rem !important;
