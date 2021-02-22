@@ -19,108 +19,66 @@ a, a:hover{
 	text-decoration: none;
 	color: inherit;
 }
-nav{
-	margin-bottom: 5%;
-}
-
-nav a{
-	color: white;
-}
-h2,h3,h4{
-	text-align: center;
-}
-.icones-habilidades{
-	margin: 2% 0;
-	font-size: 7em;
-}
-#imagem-principal{
+.loader span{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	margin: 0 5px;
+	position: relative;
+  }
+  .loader span::before{
+	content: "";
+	position: absolute;
 	width: 100%;
-}
-#sobre{
-	background-color: #eee;
-}
-.espacamento{
-	padding: 3% 0;
-}
-#sobre-paragrafo{
-	text-indent: 3%;
-	text-align: justify;
-}
-footer{
-	overflow: hidden;
-	background-color: black;
-}
-.skills{
-	margin-top: 5%;
-}
-.projects{
-	margin-top: 6%;
-	text-align: center;
-}
-h3, h5{
-	font-weight: bold;
-}
-.medias-contact{
-	margin: 5% 0;
-}
-.projetosmain h3{
-	margin: 5% 0;
-}
-.projetosmain li{
-	display: block;
-}
-.icon-margin{
-	margin-left: 25%;
-}
-.icon-margin-email{
-	margin-left: 30%;
-}
-.icon-margin-linkedin{
-	margin-left: 10%;
-}
-.integranteNome{
-	font-size: 1.5em;
-	text-align: center;
-}
-.integranteNome + p{
-	text-align: center;
-}
-.img-projeto img{
-	margin: 3% 0;
-}
-.last-img{
-	padding-bottom: 15%;
-}
-.project-name{
-	margin-top: 2%;
-	font-size: 1.5em;
-	font-weight: bold;
-}
-@media only screen and (min-width: 1000px){
-	.container-fluid img{
-		height: 18rem !important;
+	height: 100%;
+	background-color: inherit;
+	border-radius: 50%;
+	z-index: -1;
+	animation: ripple 1.5s ease-out infinite;
+  }
+  .loader span:first-child{
+	background-color: #ff414d;
+	transform: scale(0.7);
+  }
+  .loader span:first-child::before{
+	animation-delay: 0.2s;
+  }
+  .loader span:nth-child(2){
+	background-color: #ff7a00;
+	transform: scale(0.7);
+  }
+  .loader span:nth-child(2)::before{
+	animation-delay: 0.4s;
+  }
+  .loader span:nth-child(3){
+	background-color: #28df99;
+	transform: scale(0.7);
+  }
+  .loader span:nth-child(3)::before{
+	animation-delay: 0.6s;
+  }
+  .loader span:nth-child(4){
+	background-color: #81b214;
+	transform: scale(0.7);
+  }
+  .loader span:nth-child(4)::before{
+	animation-delay: 0.8s;
+  }
+  .loader span:last-child{
+	background-color: #f09ae9;
+	transform: scale(0.7);
+  }
+  .loader span:last-child::before{
+	animation-delay: 1s;
+  }
+  @keyframes ripple{
+	from{
+	  opacity: 1;
+	  transform: scale(0);
 	}
-	.container-fluid .card{
-		height: 30rem !important;
+	to{
+	  opacity: 0;
+	  transform: scale(3);
 	}
-}
-@media only screen and (max-width: 600px) {
-	#home{
-		margin-top: 39.95px;
-	}
-	#projects-section{
-		margin: auto !important;
-	}
-	.projetosmain{
-		margin-top: 15%;
-	}
-	.icon-margin{
-		margin-left: 30%;
-	}
-	.icon-margin-email{
-		margin-left: 35%;
-	}
-	.img-projeto img{
-		margin: 5% 0;
-	}
-}
+  }
