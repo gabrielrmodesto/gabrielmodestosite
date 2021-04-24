@@ -1,7 +1,6 @@
 node_modules
 package-lock.json
-vendor
-composer.lock
 .env
 .vscode
 .idea
+.next
