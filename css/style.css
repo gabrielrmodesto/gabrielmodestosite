@@ -2,16 +2,21 @@
   margin: 0;
   padding: 0;
 }
-body {
-  padding-top: 4%;
+body{
   display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-	justify-content: center;
-	align-items: center
+  flex-direction: row;
+  justify-content: center;
+  font-family: sans-serif;
 }
-main {
-  flex: 1 0 auto;
+aside{
+  background-color: #040b14;
+  width: 20vw;
+  height: 100%;
+  overflow-y: auto;
+}
+main{
+  background-color: #eeffaa;
+  width: 80vw;
 }
 ul,
 ol,
@@ -24,65 +29,38 @@ a:hover {
   text-decoration: none;
   color: inherit;
 }
-.loader span {
-  display: inline-block;
-  width: 35px;
-  height: 35px;
+.menuLateral{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menuLateral h2{
+  color: #fff;
+}
+.imagem-perfil{
   border-radius: 50%;
-  position: relative;
+  border: 5px solid #2c2f3f;
+  margin: 10% auto;
 }
-.loader span::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: inherit;
+.menuLateral h2, .redes-sociais, .menu-links{
+  margin: 5% 0;
+}
+.redes-sociais li{
+  background-color: #212431;
   border-radius: 50%;
-  z-index: -1;
-  animation: ripple 1.5s ease-out infinite;
+  width: 40px;
+  height: 40px;
 }
-.loader span:first-child {
-  background-color: #ff414d;
-  transform: scale(0.7);
+.redes-sociais li img{
+  width: 30px;
+  height: 30px;
+  padding: 10%;
 }
-.loader span:first-child::before {
-  animation-delay: 0.2s;
+.menu-links{
+  color: #eee;
 }
-.loader span:nth-child(2) {
-  background-color: #ff7a00;
-  transform: scale(0.7);
-}
-.loader span:nth-child(2)::before {
-  animation-delay: 0.4s;
-}
-.loader span:nth-child(3) {
-  background-color: #28df99;
-  transform: scale(0.7);
-}
-.loader span:nth-child(3)::before {
-  animation-delay: 0.6s;
-}
-.loader span:nth-child(4) {
-  background-color: #81b214;
-  transform: scale(0.7);
-}
-.loader span:nth-child(4)::before {
-  animation-delay: 0.8s;
-}
-.loader span:last-child {
-  background-color: #f09ae9;
-  transform: scale(0.7);
-}
-.loader span:last-child::before {
-  animation-delay: 1s;
-}
-@keyframes ripple {
-  from {
-    opacity: 1;
-    transform: scale(0);
-  }
-  to {
-    opacity: 0;
-    transform: scale(3);
-  }
+.menu-links li{
+  display: flex;
+  flex-direction: column;
 }
