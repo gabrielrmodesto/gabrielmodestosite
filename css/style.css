@@ -18,10 +18,8 @@ aside{
   left: 0;
 }
 main{
-  background-color: #eeffaa;
   width: 80vw;
   margin-left: 20%;
-  padding: 5%;
 }
 ul,
 ol,
@@ -84,4 +82,42 @@ a:hover {
 }
 .menu-links li a i{
   margin-right: 3%;
+}
+section{
+  height: 100vh;
+  padding: 5%;
+}
+#home{
+  background: url(../assets/image/computador.jpg) no-repeat top center;
+  background-size: cover;
+}
+.texto-animado{
+  margin: 10% 0 0 10%;
+  min-width: 300px;
+  color: #eee;
+  overflow: hidden;
+}
+.texto-animado p{
+  font-weight: 700;
+  font-size: 3rem;
+  margin: 0 0 10px 0;
+}
+.texto-animado span{
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+#segunda-parte-texto{
+  content: "";
+  animation: animate 4s step(12) infinite;
+}
+@keyframes animate {
+  40%, 60%{
+    left: calc(100% + 4px);
+  }
+  100%{
+    left: 0%;
+  }
+}
+#sobre-mim{
+  background-color: red;
 }
