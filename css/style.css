@@ -11,7 +11,7 @@ body{
 aside{
   background-color: #040b14;
   width: 20vw;
-  height: 100%;
+  height: 100vh;
   overflow-y: auto;
 }
 main{
@@ -58,9 +58,25 @@ a:hover {
   padding: 10%;
 }
 .menu-links{
-  color: #eee;
+  width: 100%;
+  margin-left: 45%;
+  color: #a8a9b4;
 }
 .menu-links li{
   display: flex;
   flex-direction: column;
+  padding: 5% 0;
+}
+.menu-links li a{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.4em;
+}
+.menu-links li a:hover{
+  color: #fff;
+}
+.menu-links li a i{
+  margin-right: 3%;
 }
