@@ -13,10 +13,15 @@ aside{
   width: 20vw;
   height: 100vh;
   overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 main{
   background-color: #eeffaa;
   width: 80vw;
+  margin-left: 20%;
+  padding: 5%;
 }
 ul,
 ol,
