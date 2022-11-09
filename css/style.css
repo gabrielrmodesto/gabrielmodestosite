@@ -91,31 +91,43 @@ section{
   background: url(../assets/image/computador.jpg) no-repeat top center;
   background-size: cover;
 }
+#home p{
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 10% 0 0 5%;
+}
 .texto-animado{
-  margin: 10% 0 0 10%;
-  min-width: 300px;
-  color: #eee;
+  margin: 2% 0 0 5%;
+  width: 300px;
   overflow: hidden;
 }
-.texto-animado p{
-  font-weight: 700;
-  font-size: 3rem;
-  margin: 0 0 10px 0;
+.texto-animado .texto{
+  position: relative;
+  color: #4070F4;
+  font-size: 1.3rem;
+  font-weight: 400;
 }
-.texto-animado span{
-  font-size: 1.5rem;
-  font-weight: 200;
+.texto-animado .texto.primeira-parte-texto{
+  color: #FFF;
 }
-#segunda-parte-texto{
+.texto.segunda-parte-texto:before{
   content: "";
-  animation: animate 4s step(12) infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  border-left: 2px solid #4070F4;
+  animation: animate 4s steps(12) infinite;
 }
-@keyframes animate {
+@keyframes animate{
   40%, 60%{
-    left: calc(100% + 4px);
+      left: calc(100% + 4px);
   }
   100%{
-    left: 0%;
+      left: 0%;
   }
 }
 #sobre-mim{
