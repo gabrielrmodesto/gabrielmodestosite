@@ -13,10 +13,13 @@ aside{
   width: 20vw;
   height: 100vh;
   overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 main{
-  background-color: #eeffaa;
   width: 80vw;
+  margin-left: 20%;
 }
 ul,
 ol,
@@ -79,4 +82,54 @@ a:hover {
 }
 .menu-links li a i{
   margin-right: 3%;
+}
+section{
+  height: 100vh;
+  padding: 5%;
+}
+#home{
+  background: url(../assets/image/computador.jpg) no-repeat top center;
+  background-size: cover;
+}
+#home p{
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 10% 0 0 5%;
+}
+.texto-animado{
+  margin: 2% 0 0 5%;
+  width: 300px;
+  overflow: hidden;
+}
+.texto-animado .texto{
+  position: relative;
+  color: #4070F4;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.texto-animado .texto.primeira-parte-texto{
+  color: #FFF;
+}
+.texto.segunda-parte-texto:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  border-left: 2px solid #4070F4;
+  animation: animate 4s steps(12) infinite;
+}
+@keyframes animate{
+  40%, 60%{
+      left: calc(100% + 4px);
+  }
+  100%{
+      left: 0%;
+  }
+}
+#sobre-mim{
+  background-color: red;
 }
