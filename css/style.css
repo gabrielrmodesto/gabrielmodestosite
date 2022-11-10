@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+html{
+  scroll-behavior: smooth;
+}
 body{
   display: flex;
   flex-direction: row;
@@ -36,7 +39,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-content: center;
+  margin-left: 10%;
 }
 .menuLateral h2{
   color: #fff;
@@ -62,7 +66,6 @@ a:hover {
 }
 .menu-links{
   width: 100%;
-  margin-left: 45%;
   color: #a8a9b4;
 }
 .menu-links li{
@@ -131,5 +134,23 @@ section{
   }
 }
 #sobre-mim{
-  background-color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2e8f0;
+  margin-top: -75px;
+}
+.texto-desenvolvedor{
+  padding: 0 5%;
+}
+.texto-desenvolvedor h2{
+  font-size: 3.5em;
+  font-weight: 700;
+  margin-bottom: 1.2em;
+}
+.texto-desenvolvedor p{
+  line-height: 2;
+  font-size: 1.2em;
+  font-weight: 300;
 }
