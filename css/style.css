@@ -139,7 +139,6 @@ section{
   justify-content: center;
   align-items: center;
   background-color: #e2e8f0;
-  margin-top: -120px;
 }
 .desenvolvedor-desenho{
   width: 350px;
@@ -170,4 +169,7 @@ section{
 }
 .nome-empresa{
   margin-bottom: 3%;
+}
+.article-experiencias{
+  margin-bottom: 5%;
 }
