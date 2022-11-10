@@ -139,18 +139,18 @@ section{
   justify-content: center;
   align-items: center;
   background-color: #e2e8f0;
-  margin-top: -75px;
+  margin-top: -120px;
 }
 .texto-desenvolvedor{
   padding: 0 5%;
 }
 .texto-desenvolvedor h2{
-  font-size: 3.5em;
+  font-size: 3.1em;
   font-weight: 700;
   margin-bottom: 1.2em;
 }
 .texto-desenvolvedor p{
   line-height: 2;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 300;
 }
