@@ -141,6 +141,10 @@ section{
   background-color: #e2e8f0;
   margin-top: -120px;
 }
+.desenvolvedor-desenho{
+  width: 350px;
+  height: 350px;
+}
 .texto-desenvolvedor{
   padding: 0 5%;
 }
@@ -153,4 +157,17 @@ section{
   line-height: 2;
   font-size: 1.1em;
   font-weight: 300;
+}
+#experiencia h2{
+  margin-bottom: 5%;
+}
+.titulo-tempo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1%;
+}
+.nome-empresa{
+  margin-bottom: 3%;
 }
