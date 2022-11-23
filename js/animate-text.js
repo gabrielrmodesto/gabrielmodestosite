@@ -1,12 +1,7 @@
 var text = new Typed('span.segunda-parte-texto', {
-  strings: [
-    'Desenvolvedor', 
-    'Rugbier', 
-    'Pai',
-    'Tecnólogo'
-  ],
-  typeSpeed: 100,
-  backSpeed: 50,
-  backDelay: 2000,
-  loop: true
+  strings: ['desenvolvedor web, conheça mais sobre mim'],
+  typeSpeed: 20,
+  backSpeed: 0,
+  loop: false,
+  showCursor: false
 });
