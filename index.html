@@ -3,49 +3,252 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Gabriel Modesto</title>
-	<link rel="preconnect" href="https://fonts.gstatic.com" />
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rajdhani:wght@600&display=swap"
-		rel="stylesheet" />
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-		integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	<link rel="stylesheet"
-		href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>Gabriel Modesto - Desenvolvedor</title>
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+	<link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-	<nav class="navbar">
-		<img src="https://github.com/gabrielrmodesto.png" alt="Gabriel Modesto foto de perfil" />
-		<ul>
-			<li><a href="#about">Sobre mim</a></li>
-			<li><a href="#experience">Experiências</a></li>
-			<li><a href="#education">Educação</a></li>
-			<li><a href="#skills">Habilidades</a></li>
-			<li><a href="#posts">Blog</a></li>
-		</ul>
-		<div>
-			<span>2022</span>
-		</div>
-	</nav>
-	<main class="main">
-		<section id="about">
-			<p class="sectionTitle">Sobre Mim</p>
+	<aside>
+		<nav class="menuLateral">
+			<a href="#home">
+				<img src="https://avatars.githubusercontent.com/u/15326732?v=4"
+					alt="Imagem de perfil derivada do github, link que direciona para a seção inicial do site"
+					class="imagem-perfil">
+				<h2>Gabriel Modesto</h2>
+			</a>
+			<ul class="redes-sociais">
+				<li><a href="https://www.github.com/gabrielrmodesto"> <img src="./assets/icons/github-icon.svg"
+							alt="Github ícone"></a></li>
+				<li><a href="https://www.linkedin.com/in/gabrielrmodesto"> <img src="./assets/icons/linkedin-icon.svg"
+							alt="Linkedin ícone"></a></li>
+				<li><a href="https://www.instagram.com/gabrielmodesto5/"> <img src="./assets/icons/instagram-icon.svg"
+							alt="Instagram ícone"></a></li>
+				<li><a href="https://www.facebook.com/gabriel.rodriguesmodesto/"> <img src="./assets/icons/facebook-icon.svg"
+							alt="Facebook ícone"></a></li>
+				<li><a href="mailto:gabrielrmodesto5@gmail.com"> <img src="./assets/icons/email-icon.svg"
+							alt="E-mail ícone"></a></li>
+			</ul>
+			<ul class="menu-links">
+				<li><a href="#sobre-mim"><i class="bx bx-user"></i><span>Sobre mim</span></a></li>
+				<li><a href="#experiencia"><i class='bx bx-file-blank'></i><span>Experiência</span></a></li>
+				<li><a href="#educacao"><i class='bx bxs-graduation'></i><span>Educação</span></a></li>
+				<li><a href="#habilidades"><i class='bx bx-code-alt'></i><span>Habilidades</span></a></li>
+				<li><a href="#servicos"><i class='bx bx-server'></i><span>Serviços</span></a></li>
+				<li><a href="#contato"><i class='bx bx-envelope' ></i><span>Contato</span></a></li>
+			</ul>
+		</nav>
+	</aside>
+	<main>
+		<section id="home">
+			<p>Gabriel Modesto</p>
+			<div class="texto-animado">
+				<span class="texto primeira-parte-texto">Eu sou</span>
+				<span class="texto segunda-parte-texto"></span>
+			</div>
 		</section>
-		<section id="experience">
-			<p class="sectionTitle">Experiências</p>
+		<section id="sobre-mim">
+			<div>
+				<img class="desenvolvedor-desenho" src="./assets/image/developer.svg"
+					alt="Desenho representando um desenvolvedor em um ambiente com uma tela e um notebook">
+			</div>
+			<div class="texto-desenvolvedor">
+				<h2>Quem sou</h2>
+				<p>Olá, meu nome é Gabriel Modesto, sou o pai da Clara, a menina mais linda do mundo. Sou desenvolvedor full
+					stack, pode me considerar intermediário ou com um melhor nome, pleno. Entusiasta nas tecnologias web, e
+					estudante nas áreas de engenharia de software e gestão de projetos. Sou formado em Análise e Desenvolvimento
+					de Sistemas pela FATEC Cruzeiro. Moro em Cruzeiro, minha cidade natal. Meu envolvimento com computadores
+					começou bem cedo, sempre fui fascinado por eletrônicos, jogos, e coisas as quais poderia desmontar para tentar
+					descobrir como funcionava. Sendo assim, fiz alguns cursos na área de computação, os quais me deram certeza de
+					que era isso que queria para a minha vida. Experiência com projetos web e mobile</p>
+			</div>
 		</section>
-		<section id="education">
-			<p class="sectionTitle">Formação</p>
+		<section id="experiencia">
+			<h2>Experiências</h2>
+			<article class="article-section">
+				<div class="titulo-article-div">
+					<p class="titulo-article">Engenheiro de Software</p>
+					<p class="tempo-article">Maio 2020 - Atualmente</p>
+				</div>
+				<div>
+					<p class="subtexto-article">Itaú Unibanco</p>
+				</div>
+				<div>
+					<p class="descricao-vaga">Atuação como engenheiro de software pleno. Desenvolvendo projetos institucionais.
+						Trabalhando com a cultura de squads, comunidades. Trabalhando com as seguintes tecnologias/ferramentas:
+						- .NET
+						- HTML
+						- CSS
+						- JS
+						- SQL Server
+						- Metodologias Ágeis (Scrum)</p>
+				</div>
+			</article>
+			<article class="article-section">
+				<div class="titulo-article-div">
+					<p class="titulo-article">Full Stack Developer</p>
+					<p class="tempo-article">Janeiro 2019 - Abril 2020</p>
+				</div>
+				<div>
+					<p class="subtexto-article">Next Tecnologia</p>
+				</div>
+				<div>
+					<p class="descricao-vaga">Atuação como desenvolvedor Full Stack Web. Desenvolvendo projetos internos e para
+						clientes da empresa. Utilizando como linguagem principal PHP e o framework laravel, HTML & CSS & JS, React,
+						React Native. Metodologias ágeis, como scrum, e ferramentas Microsoft como Power BI, Power APPs e Power
+						Automate.</p>
+				</div>
+			</article>
+			<article class="article-section">
+				<div class="titulo-article-div">
+					<p class="titulo-article">Suporte Técnico</p>
+					<p class="tempo-article">Janeiro 2018 - Abril 2018</p>
+				</div>
+				<div>
+					<p class="subtexto-article">Jatobox provedor de Internet</p>
+				</div>
+				<div>
+					<p class="descricao-vaga">Responsabilidades de ser o primeiro contato com cliente, via telefone ou
+						presencialmente, para que pudesse solucionar eventuais problemas relacionados a sua conexão, auxiliando o
+						cliente com o passo a passo de como deveria ser a relação física dos cabos e aparelhos em sua residência ou
+						empresa, para que assim pudesse ser encontrado o possível problema.</p>
+				</div>
+			</article>
+			<article class="article-section">
+				<div class="titulo-article-div">
+					<p class="titulo-article">Suporte técnico</p>
+					<p class="tempo-article">Setembro 2016 - Fevereiro 2017 (1ª passagem) / Setembro 2017 - Dezembro 2017 (2ª
+						passagem) </p>
+				</div>
+				<div>
+					<p class="subtexto-article">Horus Soluções</p>
+				</div>
+				<div>
+					<p class="descricao-vaga">Atuando na área de suporte técnico para auxiliar clientes com suas eventuais dúvidas
+						e problemas relacionados ao sistema o qual a empresa é revendedora, sistema este que é voltado para
+						automatização do serviço de contabilidade. Responsável por instalações em servidores e estações remotamente.
+					</p>
+				</div>
+			</article>
+			<article class="article-section">
+				<div class="titulo-article-div">
+					<p class="titulo-article">Bolsista PIBIC</p>
+					<p class="tempo-article">Fevereiro 2017 - Agosto 2017</p>
+				</div>
+				<div>
+					<p class="subtexto-article">INPE (Instituto Nacional de Pesquisas Espaciais)</p>
+				</div>
+				<div>
+					<p class="descricao-vaga">Bolsista PIBIC, com pesquisa voltada para a caracterização e regionalização das
+						bacias hidrográficas brasileiras. Aplicando durante o período de pesquisa as linguagens de programação
+						Fortran e R, utilizando-se do sistema Grads, para analisar dados de 30 anos de precipitação e
+						evapotranspiração ao final do período de bolsa foi desenvolvido relatório para ser apresentado em congresso
+						em formato de pôster.</p>
+				</div>
+			</article>
+			<article class="article-section">
+				<div class="titulo-article-div">
+					<p class="titulo-article">Assitente de RH</p>
+					<p class="tempo-article">Abril 2015 - Fevereiro 2016</p>
+				</div>
+				<div>
+					<p class="subtexto-article">Comp Júnior</p>
+				</div>
+				<div>
+					<p class="descricao-vaga">Início como trainee na área de gestão da empresa, trabalhando principalmente no
+						desenvolvimento de templates para sites que funcionariam como currículo para profissionais de determinadas
+						áreas. Após o período de dois meses sendo trainee na parte de gestão da empresa, fui efetivado como membro
+						efetivo da mesma área. Assessor da diretoria de recursos humanos da empresa. Atuando ao lado do diretor, nas
+						funções de manter um bom clima organizacional, o andamento de funções para cada membro. </p>
+				</div>
+			</article>
+			<article class="article-section">
+				<div class="titulo-article-div">
+					<p class="titulo-article">Monitor</p>
+					<p class="tempo-article">Setembro 2014 - Novembro 2015</p>
+				</div>
+				<div>
+					<p class="subtexto-article">UFLA (Universidade Federal de Lavras)</p>
+				</div>
+				<div>
+					<p class="descricao-vaga">Atuei como monitor da modalidade esportiva Rugby, na Universidade Federal de Lavras.
+						Meu papel era fazer com que o rugby fosse divulgado para comunidade acadêmica e para a comunidade lavrense;
+						em minhas funções também exerci o papel de treinador e administrador do time masculino de rugby da UFLA.</p>
+				</div>
+			</article>
 		</section>
-		<section id="skills">
-			<p class="sectionTitle">Skills</p>
+		<hr>
+		<section id="educacao">
+			<h2>Formação Acadêmica</h2>
+			<article class="article-section">
+				<div class="titulo-article-div">
+					<p class="titulo-article">UNICAMP (Universidade Estadual de Campinas)</p>
+					<p class="tempo-article">Fevereiro 2021 - Dezembro 2021</p>
+				</div>
+				<div>
+					<p class="subtexto-article">Especialização em Engenharia de Software</p>
+				</div>
+			</article>
+			<article class="article-section">
+				<div class="titulo-article-div">
+					<p class="titulo-article">FATEC Cruzeiro (Faculdade de Tecnologia)</p>
+					<p class="tempo-article">Fevereiro 2016 - Dezembro 2018</p>
+				</div>
+				<div>
+					<p class="subtexto-article">Análise e Desenvolvimento de Sistemas</p>
+				</div>
+			</article>
+			<article class="article-section">
+				<div class="titulo-article-div">
+					<p class="titulo-article">UFLA (Universidade Federal de Lavras)</p>
+					<p class="tempo-article">Novembro 2012 - Fevereiro 2016</p>
+				</div>
+				<div>
+					<p class="subtexto-article">Ciência da Computação</p>
+				</div>
+			</article>
 		</section>
-		<section id="posts">
-			<p class="sectionTitle">Posts</p>
+		<hr>
+		<section id="habilidades">
+			<h2>Conhecimentos</h2>
+			<div class="container-skills">
+				<div class="content-skills">
+					<i class="devicon-html5-plain-wordmark colored iconDev"></i>
+					<p class="descricao-skills">HTML é uma linguagem de marcação, onde criamos elementos para marcarem a estrutura de uma página web (site).</p>
+				</div>
+				<div class="content-skills">
+					<i class="devicon-css3-plain-wordmark colored iconDev"></i>
+					<p class="descricao-skills">CSS é uma linguagem de estilização, ela é responsável por dar vida a estrutura criada pelo HTML.</p>
+				</div>
+				<div class="content-skills">
+					<i class="devicon-javascript-plain colored iconDev"></i>
+					<p class="descricao-skills">Javascript é uma linguagem de programação, ele pode ser usada no backend e no frontend, junto com HTML e CSS formam a base da web.</p>
+				</div>
+				<div class="content-skills">
+					<i class="devicon-react-original-wordmark colored iconDev"></i>
+					<p class="descricao-skills">React é uma biblioteca Javascript, que permite criar sites e aplicação dinâmicas e estrutras.</p>
+				</div>
+				<div class="content-skills">
+					<i class="devicon-angularjs-plain colored iconDev"></i>
+					<p class="descricao-skills">Angular é um framework Javascript, para criação de aplicações robustas e dinâmicas.</p>
+				</div>
+				<div class="content-skills">
+					<i class="devicon-mysql-plain-wordmark colored iconDev"></i>
+					<p class="descricao-skills">MySQL é um banco de dados, o qual é possível trabalhar com os dados das aplicações criadas tanto para web, mobile e desktop.</p>
+				</div>
+			</div>
+		</section>
+		<section id="servicos">
+			<h2>O que posso te oferecer</h2>
+		</section>
+		<section id="contato">
+			<h2>Entre em contato comigo</h2>
 		</section>
 	</main>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	<script src="./js/animate-text.js"></script>
 </body>
 
 </html>
