@@ -202,31 +202,6 @@ section h2{
   font-size: 1.2rem;
   color: #555;
 }
-@media (max-width: 500px){
-  aside{
-    display: none;
-  }
-  main{
-    width: 100vw;
-    margin-left: 0;
-  }
-  #sobre-mim,
-  .titulo-article-div{
-    flex-direction: column;
-  }
-  .subtexto-article, .titulo-article{
-    text-align: center;
-  }
-  .article-section p{
-    padding: 2% 0;
-  }
-  .article-section{
-    margin-bottom: 10%;
-  }
-  .container-skills{
-    grid-template-columns: 100%;
-  }
-}
 .container-services{
   display: grid;
   grid-template-columns: repeat(3, 35%);
@@ -252,3 +227,32 @@ section h2{
   line-height: 1.5;
   font-size: 1.05em;
 }
+@media (max-width: 500px){
+  aside{
+    display: none;
+  }
+  main{
+    width: 100vw;
+    margin-left: 0;
+  }
+  #sobre-mim,
+  .titulo-article-div{
+    flex-direction: column;
+  }
+  .subtexto-article, .titulo-article{
+    text-align: center;
+  }
+  .article-section p{
+    padding: 2% 0;
+  }
+  .article-section{
+    margin-bottom: 10%;
+  }
+  .container-skills, .container-services{
+    grid-template-columns: 100%;
+  }
+  .service{
+    margin-bottom: 5%;
+  }
+}
+
