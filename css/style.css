@@ -14,7 +14,7 @@ body{
 aside{
   background-color: #040b14;
   width: 20vw;
-  height: 100vh;
+  height: 100%;
   overflow-y: auto;
   position: fixed;
   top: 0;
@@ -65,7 +65,7 @@ a:hover {
 .redes-sociais li img{
   width: 30px;
   height: 30px;
-  padding: 10%;
+  padding: 5px
 }
 .menu-links{
   width: 100%;
@@ -226,4 +226,29 @@ section h2{
   .container-skills{
     grid-template-columns: 100%;
   }
+}
+.container-services{
+  display: grid;
+  grid-template-columns: repeat(3, 35%);
+  justify-items: center;
+  align-content: center;
+}
+.service{
+  border: 1px solid #ccc;
+  padding: 5%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  box-shadow: 1px 1px #555;
+  border-radius: 4px;
+}
+.service .bx{
+  margin: .3em 0;
+  font-size: 2em;
+}
+.service p{
+  line-height: 1.5;
+  font-size: 1.05em;
 }
