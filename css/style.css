@@ -117,7 +117,6 @@ section{
   color: #FFF;
 }
 .texto.segunda-parte-texto:before{
-  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -125,16 +124,8 @@ section{
   width: 100%;
   background-color: #000;
   border-left: 2px solid #4070F4;
-  animation: animate 4s steps(12) infinite;
 }
-@keyframes animate{
-  40%, 60%{
-      left: calc(100% + 4px);
-  }
-  100%{
-      left: 0%;
-  }
-}
+
 #sobre-mim{
   display: flex;
   flex-direction: row;
@@ -210,4 +201,29 @@ section h2{
   text-align: center;
   font-size: 1.2rem;
   color: #555;
+}
+@media (max-width: 500px){
+  aside{
+    display: none;
+  }
+  main{
+    width: 100vw;
+    margin-left: 0;
+  }
+  #sobre-mim,
+  .titulo-article-div{
+    flex-direction: column;
+  }
+  .subtexto-article, .titulo-article{
+    text-align: center;
+  }
+  .article-section p{
+    padding: 2% 0;
+  }
+  .article-section{
+    margin-bottom: 10%;
+  }
+  .container-skills{
+    grid-template-columns: 100%;
+  }
 }
