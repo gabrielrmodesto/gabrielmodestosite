@@ -235,6 +235,9 @@ section h2{
     width: 100vw;
     margin-left: 0;
   }
+  section h2{
+    margin: 12% 0;
+  }
   #sobre-mim,
   .titulo-article-div{
     flex-direction: column;
@@ -251,8 +254,11 @@ section h2{
   .container-skills, .container-services{
     grid-template-columns: 100%;
   }
+  .service:nth-child(2){
+    margin: 10% 0;
+  }
   .service{
-    margin-bottom: 5%;
+    padding: 10%;
   }
 }
 
