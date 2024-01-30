@@ -52,6 +52,7 @@ a:hover {
   border-radius: 50%;
   border: 5px solid #2c2f3f;
   margin: 10% auto;
+  max-width: 90%;
 }
 .menuLateral h2, .redes-sociais, .menu-links{
   margin: 5% 0;
