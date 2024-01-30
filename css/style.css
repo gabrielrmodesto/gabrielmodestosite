@@ -166,7 +166,7 @@ section h2{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1%;
+  margin-bottom: 2%;
 }
 .titulo-article{
   font-weight: 700;
@@ -224,9 +224,10 @@ section h2{
   box-shadow: 1px 1px #555;
   border-radius: 4px;
 }
-.service .bx{
-  margin: .3em 0;
-  font-size: 2em;
+#todos-servicos{
+  font-weight: 300;
+  color: #121212;
+  margin-bottom: 5%;
 }
 .service p{
   line-height: 1.5;
@@ -256,14 +257,11 @@ section h2{
   .article-section{
     margin-bottom: 10%;
   }
-  .container-skills, .container-services{
+  .container-skills{
     grid-template-columns: 100%;
   }
-  .service:nth-child(2){
-    margin: 10% 0;
-  }
-  .service{
-    padding: 10%;
+  #todos-servicos{
+    margin-bottom: 15%;
   }
 }
 
