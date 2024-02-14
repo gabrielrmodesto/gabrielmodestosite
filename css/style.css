@@ -220,7 +220,10 @@ section h2{
 }
 @media (max-width: 500px){
   aside{
-    display: none;
+    left: -300px;
+    width: 80vw;
+    z-index: 9997;
+    transition: all 1s;
   }
   main{
     width: 100vw;
