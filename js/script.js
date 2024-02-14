@@ -3,6 +3,8 @@ let botaoAbrirMenu = document.querySelector(".bx-menu");
 let botaoFecharMenu = document.querySelector(".bx-x");
 let menuLateral = document.querySelector("aside");
 let menuAberto = false;
+let linksMenuLateral = document.querySelector(".menu-links");
+let imagemPerfilLateral = document.querySelector(".image-perfil-link");
 
 function menuResponsivo(){
   if(menuAberto === false){
@@ -27,3 +29,5 @@ function fecharMenu(){
 }
 
 botaoMenu.addEventListener("click", menuResponsivo);
+linksMenuLateral.addEventListener("click", fecharMenu);
+imagemPerfilLateral.addEventListener("click", fecharMenu);
