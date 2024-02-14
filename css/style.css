@@ -12,9 +12,9 @@ body{
   font-family: sans-serif;
 }
 aside{
-  background-color: #040b14;
+  background-color: #212121;
   width: 20vw;
-  height: 100vh;
+  height: 100%;
   overflow-y: auto;
   position: fixed;
   top: 0;
@@ -48,10 +48,15 @@ a:hover {
 .menuLateral h2{
   color: #fff;
 }
+.image-perfil-link{
+  margin: auto auto 0;
+}
 .imagem-perfil{
   border-radius: 50%;
   border: 5px solid #2c2f3f;
   margin: 10% auto;
+  max-width: 10rem;
+  max-height: 10rem;
 }
 .menuLateral h2, .redes-sociais, .menu-links{
   margin: 5% 0;
@@ -65,7 +70,7 @@ a:hover {
 .redes-sociais li img{
   width: 30px;
   height: 30px;
-  padding: 10%;
+  padding: 5px
 }
 .menu-links{
   width: 100%;
@@ -117,7 +122,6 @@ section{
   color: #FFF;
 }
 .texto.segunda-parte-texto:before{
-  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -125,16 +129,8 @@ section{
   width: 100%;
   background-color: #000;
   border-left: 2px solid #4070F4;
-  animation: animate 4s steps(12) infinite;
 }
-@keyframes animate{
-  40%, 60%{
-      left: calc(100% + 4px);
-  }
-  100%{
-      left: 0%;
-  }
-}
+
 #sobre-mim{
   display: flex;
   flex-direction: row;
@@ -170,7 +166,7 @@ section h2{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1%;
+  margin-bottom: 2%;
 }
 .titulo-article{
   font-weight: 700;
@@ -211,3 +207,67 @@ section h2{
   font-size: 1.2rem;
   color: #555;
 }
+#todos-servicos{
+  font-weight: 300;
+  color: #121212;
+  margin-bottom: 5%;
+}
+#educacao,#servicos{
+  background-color: #f5f5f5;
+}
+.navbarIcon{
+  display: none;
+}
+@media (max-width: 500px){
+  aside{
+    left: -600px;
+    width: 80vw;
+    z-index: 9997;
+    transition: all 1s;
+  }
+  main{
+    width: 100vw;
+    margin-left: 0;
+  }
+  section h2{
+    margin: 12% 0;
+  }
+  #sobre-mim,
+  .titulo-article-div{
+    flex-direction: column;
+  }
+  .subtexto-article, .titulo-article{
+    text-align: center;
+  }
+  .article-section p{
+    padding: 2% 0;
+  }
+  .article-section{
+    margin-bottom: 10%;
+  }
+  .container-skills{
+    grid-template-columns: 100%;
+  }
+  #todos-servicos{
+    margin-bottom: 10%;
+  }
+  .navbarIcon{
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    z-index: 9998;
+    border: 0;
+    outline: none;  
+    background-color: #9E9E9E;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
+
