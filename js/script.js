@@ -22,7 +22,7 @@ function abrirMenu(){
 }
 
 function fecharMenu(){
-  menuLateral.style.left = "-300px";
+  menuLateral.style.left = "-600px";
   botaoMenu.classList.remove("bx-x");
   botaoMenu.classList.add("bx-menu");
   menuAberto = false;
