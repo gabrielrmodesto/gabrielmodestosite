@@ -25,13 +25,18 @@ function abrirMenu(){
 }
 
 function fecharMenu(){
-  menuLateral.style.left = "-600px";
+  if(tamanhoTela >= 501 && tamanhoTela <= 900){
+    menuLateral.style.left = "-950px";
+  }
+  if(tamanhoTela <= 500){
+    menuLateral.style.left = "-600px";
+  }
   botaoMenu.classList.remove("bx-x");
   botaoMenu.classList.add("bx-menu");
   menuAberto = false;
 }
 
-if(tamanhoTela <= 500){
+if(tamanhoTela <= 900){
   botaoMenu.addEventListener("click", menuResponsivo);
   linksMenuLateral.addEventListener("click", fecharMenu);
   imagemPerfilLateral.addEventListener("click", fecharMenu);
