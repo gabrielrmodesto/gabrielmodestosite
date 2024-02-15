@@ -5,6 +5,9 @@ let menuLateral = document.querySelector("aside");
 let menuAberto = false;
 let linksMenuLateral = document.querySelector(".menu-links");
 let imagemPerfilLateral = document.querySelector(".image-perfil-link");
+const tamanhoTela = document.querySelector("body").clientWidth;
+
+console.log(tamanhoTela);
 
 function menuResponsivo(){
   if(menuAberto === false){
@@ -28,6 +31,8 @@ function fecharMenu(){
   menuAberto = false;
 }
 
-botaoMenu.addEventListener("click", menuResponsivo);
-linksMenuLateral.addEventListener("click", fecharMenu);
-imagemPerfilLateral.addEventListener("click", fecharMenu);
+if(tamanhoTela <= 500){
+  botaoMenu.addEventListener("click", menuResponsivo);
+  linksMenuLateral.addEventListener("click", fecharMenu);
+  imagemPerfilLateral.addEventListener("click", fecharMenu);
+}
