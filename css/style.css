@@ -218,38 +218,16 @@ section h2{
 .navbarIcon{
   display: none;
 }
-@media (max-width: 500px){
+@media (max-width: 900px) {
   aside{
-    left: -600px;
-    width: 80vw;
+    left: -950px;
+    width: 40vw;
     z-index: 9997;
-    transition: all 1s;
+    transition: all 0.5s;
   }
   main{
     width: 100vw;
     margin-left: 0;
-  }
-  section h2{
-    margin: 12% 0;
-  }
-  #sobre-mim,
-  .titulo-article-div{
-    flex-direction: column;
-  }
-  .subtexto-article, .titulo-article{
-    text-align: center;
-  }
-  .article-section p{
-    padding: 2% 0;
-  }
-  .article-section{
-    margin-bottom: 10%;
-  }
-  .container-skills{
-    grid-template-columns: 100%;
-  }
-  #todos-servicos{
-    margin-bottom: 10%;
   }
   .navbarIcon{
     position: fixed;
@@ -268,6 +246,42 @@ section h2{
     border-radius: 50px;
     font-size: 2rem;
     cursor: pointer;
+  }
+  #sobre-mim{
+    flex-direction: column;
+  }
+  #educacao .titulo-article-div{
+    flex-direction: column;
+  }
+  #educacao .subtexto-article{
+    text-align: center;;
+  }
+}
+@media (max-width: 500px){
+  aside{
+    left: -600px;
+    width: 80vw;
+  }
+  section h2{
+    margin: 12% 0;
+  }
+  .titulo-article-div{
+    flex-direction: column;
+  }
+  .subtexto-article, .titulo-article{
+    text-align: center;
+  }
+  .article-section p{
+    padding: 2% 0;
+  }
+  .article-section{
+    margin-bottom: 10%;
+  }
+  .container-skills{
+    grid-template-columns: 100%;
+  }
+  #todos-servicos{
+    margin-bottom: 10%;
   }
 }
 
